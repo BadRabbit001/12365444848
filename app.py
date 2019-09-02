@@ -33,7 +33,7 @@ async def on_message(message):
         await message.author.send(msg)
 
     if message.content.startswith('!help'):
-        msg = 'TThe bot is now in maintenance, we working on it and we hope it will be in 3 days!'.format(message)
+        msg = 'The bot is now in maintenance, we working on it and we hope it will be in 3 days!'.format(message)
         await message.author.send(msg)
 
     
