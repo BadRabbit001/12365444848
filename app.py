@@ -29,11 +29,11 @@ async def on_message(message):
         return
         
     if message.content.startswith('!info'):
-        msg = 'The bot is now in maintenance, we working on it and we hope it will be in 3 days!'
+        msg = 'The bot is under maintenance, we working on it and we hope it will be in 3 days!'
         await message.author.send(msg)
 
     if message.content.startswith('!help'):
-        msg = 'The bot is now in maintenance, we working on it and we hope it will be in 3 days!'.format(message)
+        msg = 'The bot is under maintenance, we working on it and we hope it will be in 3 days!'.format(message)
         await message.author.send(msg)
 
     
