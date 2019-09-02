@@ -15,7 +15,7 @@ client = commands.Bot(command_prefix='!')
 Clientdiscord = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['!help', '!help', '!help', '!help'])
+status = cycle(['!info', '!info', '!info', '!info'])
 
 client.remove_command('help')
 
@@ -28,9 +28,12 @@ async def on_message(message):
     if message.author == client.user:
         return
         
-    if message.content.startswith('info'):
+    if message.content.startswith('!info'):
         msg = 'The bot is now in maintenance, we working on it and we hping that in 3 days bot will work!'
-        msg = 'If you want to get the premium bot you can do so by pledging on patreon https://www.patreon.com/invitemanager '
+        await message.author.send(msg)
+
+    if message.content.startswith('!help'):
+        msg = 'The bot is now in maintenance, we working on it and we hping that in 3 days bot will work!'.format(message)
         await message.author.send(msg)
 
     
