@@ -15,7 +15,7 @@ client = commands.Bot(command_prefix='!')
 Clientdiscord = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['!info', '!info', '!info', '!info'])
+status = cycle(['!info', '!info', '!info', '!info', '!working u fucker!'])
 
 client.remove_command('help')
 
